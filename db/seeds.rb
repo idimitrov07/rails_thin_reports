@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Task.create([{name: 'Create specification', due_date: Date.today}, 
-             {name: 'Create a beta version', due_date: Date.today + 1}, 
-             {name: 'Deploy', due_date: Date.today + 2}])
+1000.times do
+  Task.create([{ name: 'Create specification', due_date: Date.today },
+               { name: 'Create a beta version', due_date: Date.today + 1 },
+               { name: 'Deploy', due_date: Date.today + 2 }])
+end
